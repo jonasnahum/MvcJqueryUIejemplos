@@ -1,0 +1,12 @@
+﻿@model MvcJqueryUIejemplos.Models.Persona
+@{
+    ViewBag.Title = "DatePicker";
+}
+
+<h2>DatePicker</h2>
+<form action="@Url.Action("DatePicker")" method="post">
+    Fecha de Nacimiento
+    <input type="text" id="calendario" name="FechaDeNacimiento" value="@Model.FechaDeNacimiento.ToShortDateString()" />
+    
+    <input type="submit" value="Guardar" />
+</form>
